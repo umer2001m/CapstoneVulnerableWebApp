@@ -4,3 +4,8 @@ from app.main import bp
 @bp.route('/')
 def index():
     return render_template('index.html')
+
+
+@bp.route("/help")
+def help_page():
+    return render_template("help.html")
